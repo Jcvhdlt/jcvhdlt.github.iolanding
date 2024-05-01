@@ -1,0 +1,78 @@
+*{
+    cursor: url(../img/cursor.png), auto ;
+    pointer-events: none;
+}
+
+body{
+    background-image: url(../img/index-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100vh;
+    flex-direction: row; 
+}
+
+h2{
+    color: white;
+}
+
+li{
+    list-style: none;
+    color: white;
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    padding: 20px;
+    margin: 0; 
+}
+ul li {
+    margin: 10px;
+}
+
+ul li a {
+    
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: white; /* Color del texto de los enlaces */
+}
+
+button{
+    color: white;
+    border:none;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 10px 20px;
+
+}
+button:hover{
+    background-color: white;
+    color: white;
+}
+
+.header {
+    /* Estilos para el encabezado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: auto; /* Añade relleno alrededor del encabezado */
+}
+
+.header img {
+    /* Estilos para la imagen del logo */
+    max-width: 70px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+.header span {
+    /* Estilos para el nombre en el encabezado */
+    font-size: 24px; /* Tamaño de fuente del nombre */
+    color: white; /* Color del texto del nombre */
+}
