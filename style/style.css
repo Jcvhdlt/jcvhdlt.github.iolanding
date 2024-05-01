@@ -1,6 +1,6 @@
 *{
-    cursor: url(../img/cursor.png), auto ;
-    pointer-events: none;
+    cursor: url(../img/cursor.png), auto !important ;
+   
 }
 
 body{
@@ -23,8 +23,12 @@ h2{
 
 li{
     list-style: none;
-    color: white;
     font-size: 30px;
+}
+
+li:hover > ul{
+    display: block;
+    align-items: center;
 }
 
 ul{
@@ -32,47 +36,114 @@ ul{
     padding: 20px;
     margin: 0; 
 }
+
 ul li {
     margin: 10px;
 }
 
 ul li a {
     
-    text-decoration: none; /* Eliminar subrayado de los enlaces */
-    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; 
 }
 
 button{
-    color: white;
+    
     border:none;
     background-color: transparent;
-    font-size: 30px;
-    padding: 10px 20px;
+    font-size: 25px;
+    padding-inline: 50px;
+    color: white;
+    
 
 }
 button:hover{
-    background-color: white;
-    color: white;
+    
+    opacity: 0.5;
+    outline: ridge 1px ;
+    border-radius: 2rem
+    
 }
 
-.header {
-    /* Estilos para el encabezado */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    margin-bottom: auto; /* Añade relleno alrededor del encabezado */
+.navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.logo img{
+    max-width: 70px; 
+    height: auto;
+    margin-right: 10px;
+}
+.sublista{
+    display: none;
 }
 
-.header img {
-    /* Estilos para la imagen del logo */
-    max-width: 70px; /* Ancho máximo de la imagen */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-right: 10px; /* Espacio a la derecha de la imagen */
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .logo img {
+        max-width: 70px;
+        height: auto;
+        margin-right: 10px;
+        display: block;
+        margin: 0 auto; 
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+    ul {
+        padding: 10px;
+    }
+
+    li {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 23px;
+        padding: 12px 25px;
+    }
 }
 
-.header span {
-    /* Estilos para el nombre en el encabezado */
-    font-size: 24px; /* Tamaño de fuente del nombre */
-    color: white; /* Color del texto del nombre */
-}
