@@ -97,11 +97,14 @@ button:hover{
 .cuerpo{
     color: white;
     position: absolute;
-    left: 3%;
-    top: 40%;
     font-size: 30px;
     box-sizing: border-box;
-    width: 1150px;
+    top: 50%;
+    right: 50%;
+    transform: translate(0, -50%); 
+    text-align: left; 
+    margin-left: 20px;
+    
 }
 
 
@@ -150,6 +153,11 @@ button:hover{
         font-size: 20px;
         padding: 10px 20px;
     }
+    .cuerpo {
+        font-size: 25px;
+        right: auto;
+        top: 60%;
+    }
 }
 @media (min-width: 577px) and (max-width: 992px) {
     ul {
@@ -158,6 +166,11 @@ button:hover{
 
     li {
         font-size: 25px;
+    }
+
+    .cuerpo {
+        font-size: 28px;
+        right: auto;
     }
 
     button {

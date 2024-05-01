@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "designer" ;
+    src: url(../font/designer-belina-studio/DESIGNER.otf);
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: url(../img/cursor.png), auto !important ;
+}
+
+body {
+    background-color: rgb(33, 13, 62);
+    font-family: "designer", Arial, sans-serif; 
+    color: white;
+    line-height: 1.6; 
+}
+
+
+header {
+    background-color: rgba(199, 171, 240, 0.726);
+    padding: 20px; 
+    position: relative;
+    text-align: center; 
+}
+
+
+h1 {
+    font-size: 60px;
+}
+
+
+p {
+    margin-top: 30px; 
+    text-align: center; 
+}
+
+.arkanoid2024{
+    background-image: url(../img/arkanoid.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding: 20px;
+    height: 300px;
+    margin-left: 50px;
+    position: relative;
+}
+span{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 1000px;
+    margin-right: 250px;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 40px; 
+    }
+    .arkanoid2024 {
+        height: auto;
+        padding: 10px;
+        background-size: auto;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    span {
+        width: 80%; 
+        margin-right: 20px; 
+    }
+}
